@@ -1,0 +1,15 @@
+[
+  { "id": "E1-A101", "etapa": 1, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 1, "orientacion": "N", "precioUF": 2690, "estacionamiento": true, "estado": "disponible" },
+  { "id": "E1-A102", "etapa": 1, "m2": 34, "dormitorios": 2, "banos": 2, "piso": 1, "orientacion": "E", "precioUF": 1990, "estacionamiento": false, "estado": "reservado" },
+  { "id": "E1-A201", "etapa": 1, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 2, "orientacion": "NE", "precioUF": 2710, "estacionamiento": true, "estado": "disponible" },
+  { "id": "E1-A202", "etapa": 1, "m2": 34, "dormitorios": 2, "banos": 2, "piso": 2, "orientacion": "E", "precioUF": 2005, "estacionamiento": false, "estado": "disponible" },
+  { "id": "E1-A301", "etapa": 1, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 3, "orientacion": "N", "precioUF": 2730, "estacionamiento": true, "estado": "disponible" },
+  { "id": "E1-A302", "etapa": 1, "m2": 34, "dormitorios": 2, "banos": 2, "piso": 3, "orientacion": "E", "precioUF": 2020, "estacionamiento": false, "estado": "disponible" },
+  { "id": "E1-A401", "etapa": 1, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 4, "orientacion": "N", "precioUF": 2750, "estacionamiento": true, "estado": "reservado" },
+  { "id": "E1-A402", "etapa": 1, "m2": 34, "dormitorios": 2, "banos": 2, "piso": 4, "orientacion": "E", "precioUF": 2035, "estacionamiento": false, "estado": "disponible" },
+  { "id": "E1-A501", "etapa": 1, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 5, "orientacion": "N", "precioUF": 2770, "estacionamiento": true, "estado": "disponible" },
+
+  { "id": "E2-B101", "etapa": 2, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 1, "orientacion": "NO", "precioUF": 2790, "estacionamiento": true, "estado": "disponible" },
+  { "id": "E2-B201", "etapa": 2, "m2": 34, "dormitorios": 2, "banos": 2, "piso": 2, "orientacion": "O", "precioUF": 2045, "estacionamiento": false, "estado": "disponible" },
+  { "id": "E2-B301", "etapa": 2, "m2": 62, "dormitorios": 2, "banos": 2, "piso": 3, "orientacion": "NO", "precioUF": 2810, "estacionamiento": true, "estado": "reservado" }
+]

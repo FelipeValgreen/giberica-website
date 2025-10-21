@@ -1,0 +1,44 @@
+{
+  "hero": {
+    "title": "Multi-family bien gestionado, bien diseñado.",
+    "subtitle": "GIBÉRICA · Gestión e Inmobiliaria. Desde el diseño hasta la operación, nos enfocamos en proyectos que rinden y se valorizan.",
+    "badge": "Entrega 1ª etapa: Enero 2026 · Reserva $500.000 (50% reembolsable a 90 días)"
+  },
+  "pillars": [
+    {
+      "title": "Precisión",
+      "text": "Procesos claros, cumplimiento y reporting."
+    },
+    {
+      "title": "Diseño", 
+      "text": "Soluciones pensadas para vivir y para invertir."
+    },
+    {
+      "title": "Gestión",
+      "text": "Arriendo, cobranza y community management integrados."
+    }
+  ],
+  "trust": [
+    "Royal Marbella",
+    "Palacete de la Alameda", 
+    "Miami District 225"
+  ],
+  "testimonials": [
+    {
+      "name": "Camila P.",
+      "role": "Compradora 32 m²",
+      "quote": "Reservé por lo simple: sin gastos comunes y cerca de la FACh."
+    },
+    {
+      "name": "Marcelo R.",
+      "role": "Inversionista 62 m²", 
+      "quote": "Rol por unidad = salida clara. Proceso transparente."
+    },
+    {
+      "name": "Patricia S.",
+      "role": "Compradora 62 m²",
+      "quote": "La terraza y el diseño funcional me convencieron. Entrega en tiempo."
+    }
+  ]
+}
+
