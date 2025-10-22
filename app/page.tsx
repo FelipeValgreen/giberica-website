@@ -48,10 +48,10 @@ export default function HomePage() {
         <div className="container relative">
           <div className="max-w-4xl mx-auto text-center space-y-8">
             <h1 className="text-balance text-carbon text-3xl md:text-4xl lg:text-5xl font-display leading-tight">
-              {content.hero.title}
+              Multi-family bien gestionado, bien diseñado.
             </h1>
             <p className="text-lg md:text-xl lg:text-2xl text-carbon/80 text-pretty leading-relaxed">
-              {content.hero.subtitle}
+              GIBÉRICA · <span className="text-olivaTierra">Gestión e Inmobiliaria</span>. Desde el diseño hasta la operación, nos enfocamos en proyectos que rinden y se valorizan.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
               <Button asChild size="lg" className="bg-carbon text-crema hover:opacity-90 text-base rounded-md px-5 py-3">

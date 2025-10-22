@@ -1,38 +1,19 @@
 import Link from "next/link"
 import { Facebook, Instagram, Linkedin, Mail, Phone } from "lucide-react"
+import { Logo } from "@/components/Logo"
 
 export function Footer() {
   return (
     <footer className="border-t bg-carbon text-crema">
       <div className="container py-12 md:py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="space-y-4">
-                    <div className="flex items-center space-x-3">
-                      <svg width="40" height="40" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        {/* Líneas arquitectónicas superiores (diagonales desde el techo) */}
-                        <path d="M8 8L12 4M16 8L20 4M24 8L28 4M32 8L36 4" stroke="#EFE7D7" strokeWidth="2" strokeLinecap="round"/>
-                        
-                        {/* Estructura principal - G + Casa integrada */}
-                        <path d="M8 40V24H12V20H8V8H24V12H28V8H40V24H36V28H40V40H8Z" fill="#EFE7D7"/>
-                        
-                        {/* Detalles internos de la casa (ventanas) */}
-                        <rect x="12" y="12" width="8" height="8" fill="#6A6150"/>
-                        <rect x="24" y="12" width="8" height="8" fill="#6A6150"/>
-                        <rect x="16" y="20" width="8" height="8" fill="#6A6150"/>
-                        
-                        {/* Líneas arquitectónicas verticales (lado derecho) */}
-                        <path d="M32 8V12M32 16V20" stroke="#EFE7D7" strokeWidth="2" strokeLinecap="round"/>
-                      </svg>
-                      <div>
-                        <h3 className="font-display text-2xl font-bold text-crema">GIBÉRICA</h3>
-                        <p className="text-xs text-crema/80 -mt-1">Gestión e Inmobiliaria</p>
-                      </div>
-                    </div>
-            <p className="text-sm text-crema/80">
-              Multi-family bien gestionado, bien diseñado.
-            </p>
-          </div>
+                  {/* Brand */}
+                  <div className="space-y-4">
+                    <Logo size="md" showSlogan={true} className="text-crema" />
+                    <p className="text-sm text-crema/80">
+                      Multi-family bien gestionado, bien diseñado.
+                    </p>
+                  </div>
 
           {/* Links */}
           <div className="space-y-4">
