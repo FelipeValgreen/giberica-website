@@ -1,0 +1,13 @@
+<svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Casa con G integrada (solo icono) -->
+  <path d="M8 50V25H12V20H8V8H25V12H30V8H42V25H38V30H42V50H8Z" fill="#3A3C38"/>
+  
+  <!-- Detalles de la casa (ventanas) -->
+  <rect x="12" y="15" width="6" height="6" fill="#F0E9DB"/>
+  <rect x="22" y="15" width="6" height="6" fill="#F0E9DB"/>
+  <rect x="17" y="25" width="6" height="6" fill="#F0E9DB"/>
+  
+  <!-- Líneas de construcción (lado derecho) -->
+  <path d="M45 8V12M45 18V22M45 28V32" stroke="#3A3C38" strokeWidth="2" strokeLinecap="round"/>
+  <path d="M48 8L52 4M48 18L52 14M48 28L52 24" stroke="#3A3C38" strokeWidth="2" strokeLinecap="round"/>
+</svg>

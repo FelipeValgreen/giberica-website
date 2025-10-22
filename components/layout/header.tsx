@@ -20,9 +20,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-crema backdrop-blur supports-[backdrop-filter]:bg-crema/95">
       <div className="container flex h-16 items-center justify-between">
-                <Link href="/" className="flex items-center">
-                  <Logo size="md" showSlogan={true} />
-                </Link>
+        <Link href="/" className="flex items-center">
+          <Logo size="md" showSlogan={true} />
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex items-center space-x-8">

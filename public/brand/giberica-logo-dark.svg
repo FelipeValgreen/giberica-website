@@ -1,0 +1,22 @@
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con color oscuro (para versiones sobre fondos claros) -->
+  <rect width="200" height="80" fill="#3A3C38"/>
+  
+  <!-- Casa con G integrada (lado izquierdo) -->
+  <path d="M20 60V35H25V30H20V15H40V20H45V15H65V35H60V40H65V60H20Z" fill="#F0E9DB"/>
+  
+  <!-- Detalles de la casa (ventanas) -->
+  <rect x="25" y="25" width="8" height="8" fill="#3A3C38"/>
+  <rect x="37" y="25" width="8" height="8" fill="#3A3C38"/>
+  <rect x="31" y="35" width="8" height="8" fill="#3A3C38"/>
+  
+  <!-- Líneas de construcción (lado derecho) -->
+  <path d="M75 15V20M75 25V30M75 35V40" stroke="#F0E9DB" strokeWidth="2" strokeLinecap="round"/>
+  <path d="M80 15L85 10M80 25L85 20M80 35L85 30" stroke="#F0E9DB" strokeWidth="2" strokeLinecap="round"/>
+  
+  <!-- Texto GIBERICA -->
+  <text x="100" y="35" font-family="Inter, sans-serif" font-size="18" font-weight="bold" fill="#F0E9DB" text-anchor="middle">GIBERICA</text>
+  
+  <!-- Texto INMOBILIARIA -->
+  <text x="100" y="50" font-family="Inter, sans-serif" font-size="12" font-weight="normal" fill="#F0E9DB" text-anchor="middle" letter-spacing="1px">INMOBILIARIA</text>
+</svg>

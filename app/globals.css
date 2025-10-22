@@ -3,14 +3,19 @@
 @tailwind utilities;
 
 :root{
-  /* Paleta OLIVE (del logo oficial) */
-  --crema:#A9AE9B;         /* fondo principal (del logo) */
-  --arena:#D8CDB6;         /* surfaces suaves */
+  /* Paleta oficial Gibérica (de las guías de marca) */
+  --crema:#F0E9DB;         /* fondo principal (beige/cream) */
+  --arena:#D8CDB6;         /* surfaces suaves (sage green) */
   --olivaClaro:#C6D0B4;    /* acentos claros */
   --oliva:#8F9A80;         /* acentos medios */
-  --olivaTierra:#3C3D36;   /* acentos oscuros (del logo) */
-  --carbon:#3C3D36;        /* texto principal (del logo) */
+  --olivaTierra:#3C3D36;   /* acentos oscuros (dark olive) */
+  --carbon:#222421;        /* texto principal (dark gray/black) */
   --carbonSoft:#3A3C38;    /* texto secundario */
+  
+  /* Colores específicos de las guías */
+  --brand-dark:#3A3C38;    /* dark olive green/brown */
+  --brand-light:#F0E9DB;   /* light beige/cream */
+  --brand-white:#FFFFFF;   /* white backgrounds */
 
   /* Tokens derivados */
   --ring: var(--olivaTierra);
@@ -87,9 +92,51 @@ html, body {
   border-color: color-mix(in oklab, var(--olivaTierra) 25%, transparent) !important;
 }
 
-/* Headings */
+/* Tipografía oficial Gibérica */
 .h1{
-  @apply font-extrabold tracking-tight;
+  @apply font-bold tracking-tight;
+  font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(30px, 4vw, 44px);
+  color: var(--carbon);
+  letter-spacing: -0.02em;
 }
-.subhead{ color: var(--carbonSoft); }
+
+.h2{
+  @apply font-bold;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(24px, 3vw, 32px);
+  color: var(--carbon);
+  letter-spacing: -0.01em;
+}
+
+.h3{
+  @apply font-semibold;
+  font-family: 'Inter', system-ui, sans-serif;
+  font-size: clamp(20px, 2.5vw, 24px);
+  color: var(--carbon);
+}
+
+.subhead{ 
+  color: var(--carbonSoft);
+  font-family: 'Inter', system-ui, sans-serif;
+  letter-spacing: 0.01em;
+}
+
+/* Tipografía de marca (como en las guías) */
+.brand-heading{
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 2rem;
+  color: var(--carbon);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.brand-subheading{
+  font-family: 'Inter', system-ui, sans-serif;
+  font-weight: normal;
+  font-size: 0.875rem;
+  color: var(--carbonSoft);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

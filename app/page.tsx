@@ -63,10 +63,10 @@ export default function HomePage() {
 
       {/* Pilares Section */}
       <Section>
-        <div className="max-w-5xl mx-auto text-center mb-8">
-          <h2 className="font-display font-bold text-2xl">Nuestro manifiesto</h2>
-          <p className="subhead mt-2">Tres pilares que guían cada proyecto que desarrollamos</p>
-        </div>
+            <div className="max-w-5xl mx-auto text-center mb-8">
+              <h2 className="h2">Nuestro manifiesto</h2>
+              <p className="subhead mt-2">Tres pilares que guían cada proyecto que desarrollamos</p>
+            </div>
 
         <div className="grid md:grid-cols-3 gap-6">
           <div className="card p-6 text-left">

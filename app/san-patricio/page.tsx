@@ -214,7 +214,7 @@ export default function SanPatricioPage() {
         
         {/* Micro-FAQ */}
         <section className="max-w-3xl mx-auto mt-10 space-y-3 text-sm text-carbon/80">
-          <h3 className="font-display font-semibold text-lg">Preguntas frecuentes</h3>
+            <h3 className="h3">Preguntas frecuentes</h3>
           <details className="card p-4">
             <summary className="font-medium">¿Cómo reservo?</summary>
             <p>Reserva con $500.000. Si cancelas dentro de 90 días, devolución del 50%.</p>
