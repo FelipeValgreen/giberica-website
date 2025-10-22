@@ -25,8 +25,8 @@
 
 /* Fondo + texto base */
 html, body {
-  background: var(--crema);
-  color: var(--carbon);
+  background: #F0E9DB;
+  color: #222421;
   font-family: Inter, system-ui, sans-serif;
 }
 
@@ -65,59 +65,72 @@ html, body {
 
 /* Botones base */
 .btn-primary{
-  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-medium;
-  background: var(--carbon);
-  color: var(--crema);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  background: #222421;
+  color: #F0E9DB;
 }
-.btn-primary:hover{ opacity:.9; }
+.btn-primary:hover{ 
+  opacity: 0.9; 
+}
+
 .btn-secondary{
-  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-medium border;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-weight: 500;
+  border: 1px solid #3C3D36;
   background: transparent;
-  color: var(--carbon);
-  border-color: color-mix(in oklab, var(--olivaTierra) 30%, transparent);
+  color: #222421;
 }
 .btn-secondary:hover{
-  background: color-mix(in oklab, var(--arena) 40%, transparent);
+  background: #D8CDB6;
 }
 
 /* Tarjetas/controles suaves */
 .card{
-  background: color-mix(in oklab, var(--arena) 26%, white);
-  border: 1px solid color-mix(in oklab, var(--olivaTierra) 22%, transparent);
+  background: #F5F2E8;
+  border: 1px solid #3C3D36;
   border-radius: 14px;
 }
 
 /* Bordes de secciones (antes negros) → sutiles */
 .hr-soft{
-  border-color: color-mix(in oklab, var(--olivaTierra) 25%, transparent) !important;
+  border-color: #3C3D36 !important;
 }
 
 /* Tipografía oficial Gibérica */
 .h1{
-  @apply font-bold tracking-tight;
+  font-weight: bold;
+  letter-spacing: -0.02em;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(30px, 4vw, 44px);
-  color: var(--carbon);
-  letter-spacing: -0.02em;
+  color: #222421;
 }
 
 .h2{
-  @apply font-bold;
+  font-weight: bold;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(24px, 3vw, 32px);
-  color: var(--carbon);
+  color: #222421;
   letter-spacing: -0.01em;
 }
 
 .h3{
-  @apply font-semibold;
+  font-weight: 600;
   font-family: 'Inter', system-ui, sans-serif;
   font-size: clamp(20px, 2.5vw, 24px);
-  color: var(--carbon);
+  color: #222421;
 }
 
 .subhead{ 
-  color: var(--carbonSoft);
+  color: #3A3C38;
   font-family: 'Inter', system-ui, sans-serif;
   letter-spacing: 0.01em;
 }
@@ -127,7 +140,7 @@ html, body {
   font-family: 'Inter', system-ui, sans-serif;
   font-weight: bold;
   font-size: 2rem;
-  color: var(--carbon);
+  color: #222421;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -136,7 +149,7 @@ html, body {
   font-family: 'Inter', system-ui, sans-serif;
   font-weight: normal;
   font-size: 0.875rem;
-  color: var(--carbonSoft);
+  color: #3A3C38;
   letter-spacing: 0.1em;
   text-transform: uppercase;
 }
