@@ -212,6 +212,26 @@ npx vercel --prod
 - **Sitemap**: https://giberica-san-patricio.vercel.app/sitemap.xml
 - **RSS**: https://giberica-san-patricio.vercel.app/feed.xml
 
+## 🔍 Lighthouse CI
+
+### Configuración
+- **Workflow**: `.github/workflows/ci-lighthouse.yml`
+- **Config**: `lighthouserc.json`
+- **Trigger**: Pull Requests y pushes a `main`
+- **Umbral**: ≥90 en Performance, SEO, Best Practices, Accessibility
+
+### Secrets Requeridos
+```bash
+VERCEL_TOKEN=vercel_xxxxx
+VERCEL_ORG_ID=team_xxxxx  
+VERCEL_PROJECT_ID=prj_xxxxx
+```
+
+### Resultados
+- **Artifacts**: Se suben automáticamente a GitHub
+- **Storage**: Temporal público para revisión
+- **Runs**: 3 ejecuciones por commit para estabilidad
+
 ## 📋 Checklist QA
 
 ### Marca/Arte
