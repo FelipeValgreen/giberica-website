@@ -70,30 +70,31 @@ export default function SanPatricioPage() {
       />
 
       {/* Hero Section */}
-      <section id="simulador" className="relative bg-crema/60 py-20 md:py-28 lg:py-36">
-        <div className="absolute inset-0 bg-[url('/apartment-building-exterior-modern.jpg')] bg-cover bg-center opacity-20"></div>
-        <div className="container relative">
-          <div className="max-w-4xl mx-auto text-center space-y-8">
-            <h1 className="text-balance text-carbon text-3xl md:text-4xl lg:text-5xl font-display leading-tight">
-              San Patricio · 2D/2B · 1ª etapa 9 unidades — Entrega Enero 2026
-            </h1>
-            <p className="text-lg md:text-xl lg:text-2xl text-carbon/80 text-pretty leading-relaxed">
-              Diseñado para inversión: multifamily sin gastos comunes; cada unidad con rol independiente.
+      <Section>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div className="space-y-4">
+            <h1 className="h1">San Patricio · 2D/2B — 1ª etapa 9 unidades</h1>
+            <p className="subhead">
+              62 m² y 34 m² · <strong>rol independiente</strong> · <strong>sin gastos comunes</strong>.
+              El Bosque (San Patricio), frente a FACH. Reserva $500.000 (50% a 90 días).
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button asChild size="lg" className="bg-carbon text-crema hover:opacity-90 text-base rounded-md px-5 py-3">
-                <Link href="#reservar">
-                  Reservar
-                  <Calendar className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <SimulatorButton className="border border-olivaTierra text-carbon hover:bg-crema/60 text-base rounded-md px-5 py-3">
-                Simular
-              </SimulatorButton>
+            <div className="flex gap-3">
+              <a href="#unidades" className="btn-primary">Ver unidades</a>
+              <a href="#simulador" className="btn-secondary">Simular pie y dividendo</a>
             </div>
           </div>
+          <div className="rounded-xl overflow-hidden border card p-0">
+            <Image 
+              src="/apartment-building-exterior-modern.jpg" 
+              alt="Render San Patricio" 
+              width={1200} 
+              height={800} 
+              priority 
+              sizes="(max-width:768px) 100vw, 560px"
+            />
+          </div>
         </div>
-      </section>
+      </Section>
 
       {/* Galería */}
       <Section>
@@ -190,6 +191,23 @@ export default function SanPatricioPage() {
           <p className="text-carbon/70">Filtra por metraje y estado para encontrar tu unidad ideal</p>
         </div>
         <UnitsTable />
+        
+        {/* Micro-FAQ */}
+        <section className="max-w-3xl mx-auto mt-10 space-y-3 text-sm text-carbon/80">
+          <h3 className="font-display font-semibold text-lg">Preguntas frecuentes</h3>
+          <details className="card p-4">
+            <summary className="font-medium">¿Cómo reservo?</summary>
+            <p>Reserva con $500.000. Si cancelas dentro de 90 días, devolución del 50%.</p>
+          </details>
+          <details className="card p-4">
+            <summary className="font-medium">¿Hay gastos comunes?</summary>
+            <p>No, el proyecto está diseñado <strong>sin gastos comunes</strong>.</p>
+          </details>
+          <details className="card p-4">
+            <summary className="font-medium">¿Qué significa rol independiente?</summary>
+            <p>Cada unidad tiene su <strong>rol propio</strong>, lo que facilita compra, venta y financiamiento.</p>
+          </details>
+        </section>
       </Section>
 
       {/* Mapa */}
@@ -220,6 +238,12 @@ export default function SanPatricioPage() {
 
       {/* Sticky CTA Desktop */}
       <StickyCTA />
+
+      {/* CTA sticky solo móvil */}
+      <div className="fixed md:hidden bottom-4 left-1/2 -translate-x-1/2 z-40 flex gap-2">
+        <a href="#simulador" className="btn-primary">Simular</a>
+        <a href="#unidades" className="btn-secondary">Ver unidades</a>
+      </div>
 
     </>
   )

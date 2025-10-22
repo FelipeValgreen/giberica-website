@@ -2,10 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background-color: #EFE7D7;
-  color: #2D2E26;
+:root{
+  /* Paleta OLIVE (del moodboard) */
+  --crema:#F0E9DB;         /* fondo principal */
+  --arena:#D8CDB6;         /* surfaces suaves */
+  --olivaClaro:#C6D0B4;    /* acentos claros */
+  --oliva:#8F9A80;         /* acentos medios */
+  --olivaTierra:#6F6957;   /* acentos oscuros */
+  --carbon:#222421;        /* texto principal */
+  --carbonSoft:#3A3C38;    /* texto secundario */
+
+  /* Tokens derivados */
+  --ring: var(--olivaTierra);
+  --link: var(--olivaTierra);
+  --link-hover: var(--carbon);
+}
+
+/* Fondo + texto base */
+html, body {
+  background: var(--crema);
+  color: var(--carbon);
   font-family: Inter, system-ui, sans-serif;
+}
+
+/* Links con estilo de marca */
+.theme-olive a{ 
+  color:var(--link); 
+  text-decoration:none; 
+  transition:color .2s ease 
+}
+.theme-olive a:hover{ 
+  color:var(--link-hover) 
+}
+.theme-olive a:focus-visible{ 
+  outline:3px solid var(--ring); 
+  outline-offset:2px; 
+  border-radius:6px 
 }
 
 .container {
@@ -26,26 +58,38 @@ body {
   }
 }
 
-.btn-primary {
-  background-color: #2D2E26;
-  color: #EFE7D7;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.375rem;
-  transition: opacity 0.2s;
+/* Botones base */
+.btn-primary{
+  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-medium;
+  background: var(--carbon);
+  color: var(--crema);
+}
+.btn-primary:hover{ opacity:.9; }
+.btn-secondary{
+  @apply inline-flex items-center justify-center rounded-md px-5 py-2.5 font-medium border;
+  background: transparent;
+  color: var(--carbon);
+  border-color: color-mix(in oklab, var(--olivaTierra) 30%, transparent);
+}
+.btn-secondary:hover{
+  background: color-mix(in oklab, var(--arena) 40%, transparent);
 }
 
-.btn-primary:hover {
-  opacity: 0.9;
+/* Tarjetas/controles suaves */
+.card{
+  background: color-mix(in oklab, var(--arena) 26%, white);
+  border: 1px solid color-mix(in oklab, var(--olivaTierra) 22%, transparent);
+  border-radius: 14px;
 }
 
-.btn-secondary {
-  border: 1px solid #6A6150;
-  color: #2D2E26;
-  padding: 0.75rem 1.25rem;
-  border-radius: 0.375rem;
-  transition: background-color 0.2s;
+/* Bordes de secciones (antes negros) → sutiles */
+.hr-soft{
+  border-color: color-mix(in oklab, var(--olivaTierra) 25%, transparent) !important;
 }
 
-.btn-secondary:hover {
-  background-color: rgba(239, 231, 215, 0.6);
+/* Headings */
+.h1{
+  @apply font-extrabold tracking-tight;
+  font-size: clamp(30px, 4vw, 44px);
 }
+.subhead{ color: var(--carbonSoft); }

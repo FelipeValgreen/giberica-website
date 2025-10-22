@@ -67,7 +67,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className="font-sans antialiased">
+      <body className="theme-olive min-h-screen bg-crema text-carbon font-sans antialiased">
         <Header />
         <main>{children}</main>
         <Footer />

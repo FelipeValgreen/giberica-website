@@ -53,16 +53,9 @@ export default function HomePage() {
             <p className="text-lg md:text-xl lg:text-2xl text-carbon/80 text-pretty leading-relaxed">
               GIBÉRICA · <span className="text-olivaTierra">Gestión e Inmobiliaria</span>. Desde el diseño hasta la operación, nos enfocamos en proyectos que rinden y se valorizan.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center pt-4">
-              <Button asChild size="lg" className="bg-carbon text-crema hover:opacity-90 text-base rounded-md px-5 py-3">
-                <Link href="/contacto">
-                  Quiero cotizar
-                  <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
-              </Button>
-              <Button asChild size="lg" variant="outline" className="border border-olivaTierra text-carbon hover:bg-crema/60 text-base rounded-md px-5 py-3">
-                <Link href="/san-patricio">Ver San Patricio</Link>
-              </Button>
+            <div className="flex items-center justify-center gap-3 pt-2">
+              <a href="/contacto" className="btn-primary">Quiero cotizar →</a>
+              <a href="/san-patricio" className="btn-secondary">Ver San Patricio</a>
             </div>
           </div>
         </div>
@@ -70,29 +63,24 @@ export default function HomePage() {
 
       {/* Pilares Section */}
       <Section>
-        <div className="text-center mb-16 md:mb-20">
-          <h2 className="text-carbon text-3xl md:text-4xl font-display mb-6">Nuestro manifiesto</h2>
-          <p className="text-base md:text-lg text-carbon/70 max-w-2xl mx-auto leading-relaxed">
-            Tres pilares que guían cada proyecto que desarrollamos
-          </p>
+        <div className="max-w-5xl mx-auto text-center mb-8">
+          <h2 className="font-display font-bold text-2xl">Nuestro manifiesto</h2>
+          <p className="subhead mt-2">Tres pilares que guían cada proyecto que desarrollamos</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 lg:gap-10">
-          {content.pillars.map((pilar, index) => (
-            <Card key={index} className="border-2 hover:border-carbon transition-colors">
-              <CardContent className="pt-10 px-8 pb-10 space-y-6">
-                <IconLine icon={
-                  index === 0 ? <Target className="h-7 w-7" /> :
-                  index === 1 ? <Compass className="h-7 w-7" /> :
-                  <Ruler className="h-7 w-7" />
-                } />
-                <h3 className="text-carbon text-xl md:text-2xl font-display">{pilar.title}</h3>
-                <p className="text-carbon/70 leading-relaxed">
-                  {pilar.text}
-                </p>
-              </CardContent>
-            </Card>
-          ))}
+        <div className="grid md:grid-cols-3 gap-6">
+          <div className="card p-6 text-left">
+            <div className="font-semibold mb-2">Precisión</div>
+            <p className="text-sm text-carbon/80">Procesos claros, cumplimiento y reporting.</p>
+          </div>
+          <div className="card p-6 text-left">
+            <div className="font-semibold mb-2">Diseño</div>
+            <p className="text-sm text-carbon/80">Soluciones pensadas para vivir e invertir.</p>
+          </div>
+          <div className="card p-6 text-left">
+            <div className="font-semibold mb-2">Gestión</div>
+            <p className="text-sm text-carbon/80">Arriendo, cobranza y community management integrados.</p>
+          </div>
         </div>
       </Section>
 
