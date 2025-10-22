@@ -7,9 +7,11 @@ import { Section } from "@/components/Section"
 import { UnitsTable } from "@/components/UnitsTable"
 import { SimulatorButton } from "@/components/SimulatorButton"
 import { MapSection } from "@/components/MapSection"
-import { DownloadCard } from "@/components/DownloadCard"
+import { DownloadsSection } from "@/components/DownloadCard"
 import { MobileStickyBar } from "@/components/MobileStickyBar"
 import { StickyCTA } from "@/components/StickyCTA"
+import { TechnicalSpecs } from "@/components/san-patricio/technical-specs"
+import { FAQSection } from "@/components/san-patricio/faq-section"
 import { CheckCircle, MapPin, Calendar, Phone } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -198,58 +200,19 @@ export default function SanPatricioPage() {
         <MapSection />
       </Section>
 
+      {/* Ficha Técnica */}
+      <Section>
+        <TechnicalSpecs />
+      </Section>
+
       {/* Descargas */}
       <Section>
-        <div className="text-center mb-12">
-          <h2 className="text-carbon text-3xl md:text-4xl font-display mb-6">Descargas</h2>
-        </div>
-        <div className="grid md:grid-cols-3 gap-6">
-          <DownloadCard 
-            title="Brochure" 
-            file="san-patricio-brochure.pdf" 
-            description="PDF · Descarga gratuita"
-          />
-          <DownloadCard 
-            title="Ficha Técnica" 
-            file="san-patricio-ficha.pdf" 
-            description="PDF · Descarga gratuita"
-          />
-          <DownloadCard 
-            title="Planos" 
-            file="san-patricio-planos.pdf" 
-            description="PDF · Descarga gratuita"
-          />
-        </div>
+        <DownloadsSection />
       </Section>
 
       {/* FAQ */}
       <Section className="bg-crema/30">
-        <div className="text-center mb-12">
-          <h2 className="text-carbon text-3xl md:text-4xl font-display mb-6">Preguntas Frecuentes</h2>
-        </div>
-        <div className="max-w-3xl mx-auto space-y-6">
-          {[
-            {
-              q: "¿Cómo funciona la reserva?",
-              a: "La reserva es de $500.000 por 90 días, con devolución del 50% según Términos y Condiciones si decides no continuar."
-            },
-            {
-              q: "¿Qué documentos necesito para reservar?",
-              a: "Cédula de identidad, comprobante de ingresos y autorización de consulta bancaria."
-            },
-            {
-              q: "¿Cómo funciona el arriendo y mantención?",
-              a: "Cada unidad tiene rol independiente. El arriendo y mantención son responsabilidad del propietario, sin gastos comunes."
-            }
-          ].map((faq, index) => (
-            <Card key={index}>
-              <CardContent className="p-6">
-                <h3 className="text-carbon text-lg font-display mb-3">{faq.q}</h3>
-                <p className="text-carbon/70 leading-relaxed">{faq.a}</p>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
+        <FAQSection />
       </Section>
 
       {/* Sticky Bar Mobile */}

@@ -24,12 +24,13 @@ export function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="text-balance text-carbon font-display text-3xl md:text-4xl lg:text-5xl font-bold">2D/2B con rol independiente y sin gastos comunes.</h1>
+          <h1 className="text-balance text-carbon font-display text-3xl md:text-4xl lg:text-5xl font-bold">
+            San Patricio · 2D/2B · 1ª etapa 9 unidades — Entrega Enero 2026
+          </h1>
 
           {/* Subheadline */}
           <p className="text-xl md:text-2xl text-carbon/80 text-pretty leading-relaxed">
-            San Patricio · Gran Avenida/FACh · 32–62 m², terrazas/patios, sistema eléctrico. Obra en curso · Entrega
-            Etapa 1: enero 2026.
+            Diseñado para inversión: multifamily sin gastos comunes; cada unidad con rol independiente.
           </p>
 
           {/* CTAs */}
@@ -40,21 +41,9 @@ export function HeroSection() {
             <Button
               size="lg"
               variant="outline"
-              className="border-[#1F1F1F] text-[#1F1F1F] hover:bg-[#1F1F1F] hover:text-[#FBF9F4] bg-transparent"
+              className="border-olivaTierra text-carbon hover:bg-crema/60 bg-transparent"
             >
-              <Calendar className="mr-2 h-4 w-4" />
-              Agendar tour 12 min
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-[#1E4D3C] text-[#1E4D3C] hover:bg-[#1E4D3C] hover:text-[#FBF9F4] bg-transparent"
-              asChild
-            >
-              <a href="https://wa.me/56912345678" target="_blank" rel="noopener noreferrer">
-                <MessageCircle className="mr-2 h-4 w-4" />
-                WhatsApp
-              </a>
+              Simular
             </Button>
           </div>
 
