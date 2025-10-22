@@ -28,6 +28,12 @@ export const POSTS: Post[] = [
         <li>Pagas solo tus consumos individuales</li>
       </ul>
       
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #6A6150;">
+        <h3>¿Interesado en San Patricio?</h3>
+        <p>Conoce nuestro proyecto multifamily sin gastos comunes y descubre cómo invertir inteligentemente.</p>
+        <a href="/san-patricio?utm_source=blog&utm_medium=internal&utm_campaign=content" style="display: inline-block; background: #2D2E26; color: #EFE7D7; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">Ver San Patricio →</a>
+      </div>
+      
       <h2>Impacto en tu presupuesto</h2>
       <p>Un departamento típico en Santiago puede tener gastos comunes de $80.000 a $150.000 mensuales. En 10 años, eso suma entre $9.6M y $18M de pesos.</p>
     `,
@@ -50,6 +56,12 @@ export const POSTS: Post[] = [
         <li>Proceso de venta más rápido</li>
         <li>Mayor liquidez del activo</li>
       </ul>
+      
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #6A6150;">
+        <h3>¿Interesado en San Patricio?</h3>
+        <p>Conoce nuestro proyecto multifamily sin gastos comunes y descubre cómo invertir inteligentemente.</p>
+        <a href="/san-patricio?utm_source=blog&utm_medium=internal&utm_campaign=content" style="display: inline-block; background: #2D2E26; color: #EFE7D7; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">Ver San Patricio →</a>
+      </div>
     `,
   },
   {
@@ -78,6 +90,12 @@ export const POSTS: Post[] = [
         <li>Financiamiento: 1.760 UF</li>
         <li>Dividendo estimado: ~$650.000/mes</li>
       </ul>
+      
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #6A6150;">
+        <h3>¿Interesado en San Patricio?</h3>
+        <p>Conoce nuestro proyecto multifamily sin gastos comunes y descubre cómo invertir inteligentemente.</p>
+        <a href="/san-patricio?utm_source=blog&utm_medium=internal&utm_campaign=content" style="display: inline-block; background: #2D2E26; color: #EFE7D7; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">Ver San Patricio →</a>
+      </div>
     `,
   },
   {
@@ -95,6 +113,12 @@ export const POSTS: Post[] = [
         <li>Metro San Alberto Hurtado: 10 minutos</li>
         <li>Gran Avenida: acceso directo</li>
       </ul>
+      
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #6A6150;">
+        <h3>¿Interesado en San Patricio?</h3>
+        <p>Conoce nuestro proyecto multifamily sin gastos comunes y descubre cómo invertir inteligentemente.</p>
+        <a href="/san-patricio?utm_source=blog&utm_medium=internal&utm_campaign=content" style="display: inline-block; background: #2D2E26; color: #EFE7D7; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">Ver San Patricio →</a>
+      </div>
       
       <h2>Servicios cercanos</h2>
       <ul>
@@ -128,6 +152,12 @@ export const POSTS: Post[] = [
         <li>Comprobante de ingresos</li>
         <li>Datos de contacto</li>
       </ul>
+      
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #6A6150;">
+        <h3>¿Interesado en San Patricio?</h3>
+        <p>Conoce nuestro proyecto multifamily sin gastos comunes y descubre cómo invertir inteligentemente.</p>
+        <a href="/san-patricio?utm_source=blog&utm_medium=internal&utm_campaign=content" style="display: inline-block; background: #2D2E26; color: #EFE7D7; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">Ver San Patricio →</a>
+      </div>
     `,
   },
   {
@@ -161,6 +191,12 @@ export const POSTS: Post[] = [
         <li>Certificados de instalaciones</li>
         <li>Garantías</li>
       </ul>
+      
+      <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #6A6150;">
+        <h3>¿Interesado en San Patricio?</h3>
+        <p>Conoce nuestro proyecto multifamily sin gastos comunes y descubre cómo invertir inteligentemente.</p>
+        <a href="/san-patricio?utm_source=blog&utm_medium=internal&utm_campaign=content" style="display: inline-block; background: #2D2E26; color: #EFE7D7; padding: 10px 20px; border-radius: 6px; text-decoration: none; font-weight: 500;">Ver San Patricio →</a>
+      </div>
     `,
   },
 ]
