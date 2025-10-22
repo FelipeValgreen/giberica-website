@@ -97,6 +97,14 @@ export function Footer() {
           </div>
         </div>
       </div>
+      
+      {/* Línea base con tagline */}
+      <div className="bg-olivaTierra text-crema text-xs">
+        <div className="mx-auto max-w-7xl px-6 py-3 flex flex-col md:flex-row gap-2 md:justify-between">
+          <div>"Multi-family bien gestionado, bien diseñado."</div>
+          <div className="opacity-90">Brand & web por Greenseo LLC</div>
+        </div>
+      </div>
     </footer>
   )
 }

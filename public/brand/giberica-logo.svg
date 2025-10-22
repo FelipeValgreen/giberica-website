@@ -1,15 +1,22 @@
-<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Líneas arquitectónicas superiores (diagonales desde el techo) -->
-  <path d="M8 8L12 4M16 8L20 4M24 8L28 4M32 8L36 4" stroke="#6A6150" strokeWidth="2" strokeLinecap="round"/>
+<svg width="200" height="80" viewBox="0 0 200 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo con color oliva claro -->
+  <rect width="200" height="80" fill="#A9AE9B"/>
   
-  <!-- Estructura principal - G + Casa integrada -->
-  <path d="M8 40V24H12V20H8V8H24V12H28V8H40V24H36V28H40V40H8Z" fill="#6A6150"/>
+  <!-- Casa con G integrada (lado izquierdo) -->
+  <path d="M20 60V35H25V30H20V15H40V20H45V15H65V35H60V40H65V60H20Z" fill="#3C3D36"/>
   
-  <!-- Detalles internos de la casa (ventanas) -->
-  <rect x="12" y="12" width="8" height="8" fill="#EFE7D7"/>
-  <rect x="24" y="12" width="8" height="8" fill="#EFE7D7"/>
-  <rect x="16" y="20" width="8" height="8" fill="#EFE7D7"/>
+  <!-- Detalles de la casa (ventanas) -->
+  <rect x="25" y="25" width="8" height="8" fill="#A9AE9B"/>
+  <rect x="37" y="25" width="8" height="8" fill="#A9AE9B"/>
+  <rect x="31" y="35" width="8" height="8" fill="#A9AE9B"/>
   
-  <!-- Líneas arquitectónicas verticales (lado derecho) -->
-  <path d="M32 8V12M32 16V20" stroke="#6A6150" strokeWidth="2" strokeLinecap="round"/>
+  <!-- Líneas de construcción (lado derecho) -->
+  <path d="M75 15V20M75 25V30M75 35V40" stroke="#3C3D36" strokeWidth="2" strokeLinecap="round"/>
+  <path d="M80 15L85 10M80 25L85 20M80 35L85 30" stroke="#3C3D36" strokeWidth="2" strokeLinecap="round"/>
+  
+  <!-- Texto GIBERICA -->
+  <text x="100" y="35" font-family="Arial, sans-serif" font-size="18" font-weight="bold" fill="#3C3D36" text-anchor="middle">GIBERICA</text>
+  
+  <!-- Texto INMOBILIARIA -->
+  <text x="100" y="50" font-family="Arial, sans-serif" font-size="12" font-weight="normal" fill="#3C3D36" text-anchor="middle" letter-spacing="1px">INMOBILIARIA</text>
 </svg>

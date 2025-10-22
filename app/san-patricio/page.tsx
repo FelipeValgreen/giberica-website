@@ -1,6 +1,7 @@
 import type { Metadata } from "next"
 import Image from "next/image"
 import Link from "next/link"
+import Script from "next/script"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Section } from "@/components/Section"
@@ -68,6 +69,25 @@ export default function SanPatricioPage() {
         type="application/ld+json" 
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} 
       />
+
+      <Script id="schema-product" type="application/ld+json" strategy="afterInteractive">
+        {JSON.stringify({
+          "@context":"https://schema.org",
+          "@type":"Product",
+          name:"San Patricio · Departamentos 2D/2B",
+          brand:{"@type":"Organization", name:"Gibérica"},
+          image:["https://giberica-san-patricio-filipovalverde-5673s-projects.vercel.app/apartment-building-exterior-modern.jpg"],
+          description:"2D/2B (62 y 34 m²), rol independiente, sin gastos comunes, El Bosque.",
+          offers:{
+            "@type":"AggregateOffer",
+            priceCurrency:"CLF",
+            lowPrice:"1990",
+            highPrice:"2810",
+            availability:"https://schema.org/InStock",
+            url:"https://giberica-san-patricio-filipovalverde-5673s-projects.vercel.app/san-patricio"
+          }
+        })}
+      </Script>
 
       {/* Hero Section */}
       <Section>

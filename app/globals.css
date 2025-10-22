@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root{
-  /* Paleta OLIVE (del moodboard) */
-  --crema:#F0E9DB;         /* fondo principal */
+  /* Paleta OLIVE (del logo oficial) */
+  --crema:#A9AE9B;         /* fondo principal (del logo) */
   --arena:#D8CDB6;         /* surfaces suaves */
   --olivaClaro:#C6D0B4;    /* acentos claros */
   --oliva:#8F9A80;         /* acentos medios */
-  --olivaTierra:#6F6957;   /* acentos oscuros */
-  --carbon:#222421;        /* texto principal */
+  --olivaTierra:#3C3D36;   /* acentos oscuros (del logo) */
+  --carbon:#3C3D36;        /* texto principal (del logo) */
   --carbonSoft:#3A3C38;    /* texto secundario */
 
   /* Tokens derivados */
